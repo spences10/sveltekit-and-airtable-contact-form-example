@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import ContactForm from '$lib/contact-form.svelte'
+</script>
+
+<h1>SvelteKit contact form submission with Airtable</h1>
+
+<ContactForm />
