@@ -14,7 +14,7 @@
     "@sveltejs/kit": "next",
     "prettier": "2.6.1",
     "prettier-plugin-svelte": "2.6.0",
-    "svelte": "3.46.4"
+    "svelte": "3.46.6"
   },
   "type": "module"
 }
