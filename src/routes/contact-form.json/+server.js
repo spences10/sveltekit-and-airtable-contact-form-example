@@ -1,3 +1,6 @@
+import { AIRTABLE_BASE_ID, AIRTABLE_TOKEN } from '$env/static/private'
+import { json as json$1 } from '@sveltejs/kit'
+
 export const POST = async ({ request }) => {
   const fd = await request.formData()
 
@@ -5,8 +8,6 @@ export const POST = async ({ request }) => {
   const email = fd.get('email')
   const message = fd.get('message')
 
-  const AIRTABLE_BASE_ID = import.meta.env.VITE_AIRTABLE_BASE_ID
-  const AIRTABLE_TOKEN = import.meta.env.VITE_AIRTABLE_TOKEN
   const AIRTABLE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/submissions`
 
   let data = {
@@ -30,18 +31,17 @@ export const POST = async ({ request }) => {
   })
 
   if (res.ok) {
-    return {
-      status: 200,
-      body: {
-        message: 'success',
-      },
-    }
+    return json$1({
+      message: 'success',
+    })
   } else {
-    return {
-      status: 404,
-      body: {
+    return json$1(
+      {
         message: 'failed',
       },
-    }
+      {
+        status: 404,
+      }
+    )
   }
 }

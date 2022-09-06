@@ -9,8 +9,8 @@ specifiers:
   vite: 3.1.0-beta.1
 
 devDependencies:
-  '@sveltejs/adapter-auto': 1.0.0-next.70
-  '@sveltejs/kit': 1.0.0-next.456_fhgkwirxvgjw2igda6zmhiisma
+  '@sveltejs/adapter-auto': 1.0.0-next.71
+  '@sveltejs/kit': 1.0.0-next.471_fhgkwirxvgjw2igda6zmhiisma
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
   svelte: 3.49.0
@@ -65,11 +65,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.0-next.70:
-    resolution: {integrity: sha512-FJlDO6oUqbuFJjQoguGb4gdBj3iCSM3evFXkBpQ7hvwu3y2gKbcdzsxdn9tZ5LzkHh79CeJcwiszXFQ8usKk/A==}
+  /@sveltejs/adapter-auto/1.0.0-next.71:
+    resolution: {integrity: sha512-Qsl82HcehWJbZztXgmU/nTPDeeIaB4jrOQpSvy3Pi8octs+rEf/CO87Wk06EP+M/zUzEHDNENMOx0DgWuHpj7Q==}
     dependencies:
       '@sveltejs/adapter-cloudflare': 1.0.0-next.32
-      '@sveltejs/adapter-netlify': 1.0.0-next.75
+      '@sveltejs/adapter-netlify': 1.0.0-next.76
       '@sveltejs/adapter-vercel': 1.0.0-next.72
     transitivePeerDependencies:
       - encoding
@@ -84,8 +84,8 @@ packages:
       worktop: 0.8.0-next.14
     dev: true
 
-  /@sveltejs/adapter-netlify/1.0.0-next.75:
-    resolution: {integrity: sha512-1zTR/U/ceEAyqIGJ74v54G+JbIR+fSmTN9qfqGOM0gBwVoBVRUujGm4tDFJQNYzvuGzVnC7br/rhYMLZd2JluQ==}
+  /@sveltejs/adapter-netlify/1.0.0-next.76:
+    resolution: {integrity: sha512-XC33i13N+zkDP1rKrssQ55TPzt4DkLjKux6g1xW2MB+5KxnC9PP2rIkocKxFw/pK2XU8cUIgmOJ1y5PQrHaiKg==}
     dependencies:
       '@iarna/toml': 2.2.5
       esbuild: 0.14.54
@@ -103,16 +103,16 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.456_fhgkwirxvgjw2igda6zmhiisma:
-    resolution: {integrity: sha512-yzYoRtRPqVTcIehfxXptZzH5bDN/19cqTrrJ1KM0Ju5BrpRsRvqLYlZBYBaDv0bx1MdfJkUJlPVchLbS6bsRXw==}
+  /@sveltejs/kit/1.0.0-next.471_fhgkwirxvgjw2igda6zmhiisma:
+    resolution: {integrity: sha512-0uByoMKVXNPckO1MfMIsqOAvCKYAEDaGaVtUYw+6ZvRnTNA77UIGaX9x4RIL9rcc0xQOxTGNR4Xj+0SUCIqmEw==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
       svelte: ^3.44.0
-      vite: ^3.1.0-beta.1
+      vite: ^3.1.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.3_fhgkwirxvgjw2igda6zmhiisma
+      '@sveltejs/vite-plugin-svelte': 1.0.5_fhgkwirxvgjw2igda6zmhiisma
       cookie: 0.5.0
       devalue: 3.1.2
       kleur: 4.1.5
@@ -131,8 +131,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.3_fhgkwirxvgjw2igda6zmhiisma:
-    resolution: {integrity: sha512-0Qu51m2W9RBlxWPp8i31KJpnqmjWMOne8vAzgmOX6ZM9uX+/RAv6BNhEMcNoP5MsyLjyW1ZTCiJoaZZ5EeqpFg==}
+  /@sveltejs/vite-plugin-svelte/1.0.5_fhgkwirxvgjw2igda6zmhiisma:
+    resolution: {integrity: sha512-CmSdSow0Dr5ua1A11BQMtreWnE0JZmkVIcRU/yG3PKbycKUpXjNdgYTWFSbStLB0vdlGnBbm2+Y4sBVj+C+TIw==}
     engines: {node: ^14.18.0 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
