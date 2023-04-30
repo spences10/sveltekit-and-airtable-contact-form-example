@@ -3,14 +3,9 @@ import {
 	AIRTABLE_BASE_ID,
 } from '$env/static/private'
 import { json } from '@sveltejs/kit'
-import type { RequestHandler } from './$types'
 
-export const POST: RequestHandler = async ({ request }) => {
-	const form_data = await request.formData()
-
-	const name = form_data.get('name')
-	const email = form_data.get('email')
-	const message = form_data.get('message')
+export const POST = async ({ request }) => {
+	const { name, email, message } = await request.json()
 
 	const AIRTABLE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/submissions`
 
