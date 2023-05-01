@@ -30,6 +30,7 @@
 	<p>Submission success.</p>
 
 	<button
+		data-sveltekit-reload
 		on:click={() => {
 			submission_status = ''
 		}}

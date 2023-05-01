@@ -7,8 +7,8 @@
 </main>
 
 <style>
-  main {
-    margin: 0 auto;
-    padding: 1rem;
-  }
+	main {
+		margin: 0 auto;
+		padding: 1rem;
+	}
 </style>
