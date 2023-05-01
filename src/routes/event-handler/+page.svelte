@@ -76,4 +76,4 @@
 	</form>
 {/if}
 
-<p><a href="/">Back</a></p>
+<p><a href="/" data-sveltekit-reload>Back</a></p>
