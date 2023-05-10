@@ -35,6 +35,7 @@
 			on:click={() => {
 				submission_status = ''
 			}}
+			class="btn btn-primary w-full"
 		>
 			Submit another?
 		</button>

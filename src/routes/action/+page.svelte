@@ -22,6 +22,7 @@
 			on:click={() => {
 				submissionStatus = null
 			}}
+			class="btn btn-primary w-full"
 		>
 			Submit another?
 		</button>
