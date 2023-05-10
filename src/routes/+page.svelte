@@ -1,6 +1,6 @@
 <h1>SvelteKit contact form submission with Airtable</h1>
 
-<p>Two ways to submit form data.</p>
+<p>Several ways to submit form data.</p>
 
 <p>
 	With an
@@ -10,6 +10,11 @@
 <p>
 	With an
 	<a href="/action">Action</a>
+</p>
+
+<p>
+	With
+	<a href="/super-forms">SvelteKit Superforms</a>
 </p>
 
 <iframe

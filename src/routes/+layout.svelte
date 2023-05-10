@@ -1,14 +1,7 @@
 <script lang="ts">
-	import '../styles.css'
+	import '../app.css'
 </script>
 
-<main>
+<main class="container max-w-4xl mx-auto px-4 mb-20 text-xl prose-xl prose-a:link-primary">
 	<slot />
 </main>
-
-<style>
-	main {
-		margin: 0 auto;
-		padding: 1rem;
-	}
-</style>
