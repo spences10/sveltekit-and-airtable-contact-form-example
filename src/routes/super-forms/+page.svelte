@@ -19,6 +19,9 @@
 		onSubmit: () => {
 			submission_status = 'submitting'
 		},
+		onError: () => {
+			submission_status = 'failed'
+		},
 		onUpdated: () => {
 			submission_status = 'success'
 		},
