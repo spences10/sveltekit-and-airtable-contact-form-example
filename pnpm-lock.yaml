@@ -64,7 +64,7 @@ devDependencies:
     version: 5.1.3(postcss-load-config@5.0.3)(postcss@8.4.32)(svelte@4.2.12)(typescript@5.3.3)
   sveltekit-superforms:
     specifier: ^2.0.0
-    version: 2.8.1(@sveltejs/kit@2.0.6)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(svelte@4.2.12)
+    version: 2.12.0(@sveltejs/kit@2.0.6)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(svelte@4.2.12)
   tailwindcss:
     specifier: ^3.4.0
     version: 3.4.1
@@ -555,8 +555,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@gcornut/valibot-json-schema@0.0.25(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.29.0):
-    resolution: {integrity: sha512-JlOmghA8OMM8B+3lLSWrZqce4FM5SrCO/bmYGZQz3ZYPja/mXhLYa2qEOFUsBaz24prv04un3zXIUpJzgglAkw==}
+  /@gcornut/valibot-json-schema@0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.30.0):
+    resolution: {integrity: sha512-xcMaUStVgQzPrK3d7PuLFbQ+3qSp6LzaLExAm52E3FKmUfjQa7Sw5cDK6Hfu/8WT0yfGsuSCuJ5uT1sosjR9Qg==}
     hasBin: true
     requiresBuild: true
     peerDependencies:
@@ -568,7 +568,7 @@ packages:
       '@types/json-schema': 7.0.15
       esbuild: 0.20.2
       esbuild-runner: 2.2.2(esbuild@0.20.2)
-      valibot: 0.29.0
+      valibot: 0.30.0
     dev: true
     optional: true
 
@@ -695,8 +695,8 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@poppinss/macroable@1.0.1:
-    resolution: {integrity: sha512-bO3+rnqGhE+gdx4DOyYjY9jCm2+c5Ncyl2Gmst0w271rIFnsB00btonpdmAqvFNzS8rcas+APGm+47fYMmkpQA==}
+  /@poppinss/macroable@1.0.2:
+    resolution: {integrity: sha512-xhhEcEvhQC8mP5oOr5hbE4CmUgmw/IPV1jhpGg2xSkzoFrt9i8YVqBQt9744EFesi5F7pBheWozg63RUBM/5JA==}
     engines: {node: '>=18.16.0'}
     requiresBuild: true
     dev: true
@@ -1087,8 +1087,8 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vinejs/compiler@2.4.1:
-    resolution: {integrity: sha512-WZqCZEQBvuPEghAxnpvNLclyyfqkmU+2V2K4zoZhOUJRD9KRJ+hCNQQ6LSzt7ZwSh+wwxq0r9FpAfeC3tswB8Q==}
+  /@vinejs/compiler@2.5.0:
+    resolution: {integrity: sha512-hg4ekaB5Y2zh+IWzBiC/WCDWrIfpVnKu/ubUvelKlidc/VbulsexoFRw5kJGHZenPVI5YzNnDeTdYSALkTV7jQ==}
     engines: {node: '>=18.0.0'}
     requiresBuild: true
     dev: true
@@ -1099,9 +1099,9 @@ packages:
     engines: {node: '>=18.16.0'}
     requiresBuild: true
     dependencies:
-      '@poppinss/macroable': 1.0.1
+      '@poppinss/macroable': 1.0.2
       '@types/validator': 13.11.9
-      '@vinejs/compiler': 2.4.1
+      '@vinejs/compiler': 2.5.0
       camelcase: 8.0.0
       dayjs: 1.11.10
       dlv: 1.1.3
@@ -3036,8 +3036,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /sveltekit-superforms@2.8.1(@sveltejs/kit@2.0.6)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(svelte@4.2.12):
-    resolution: {integrity: sha512-jlQUnAdlhQEBMpA1k9qNUQzelPSNWsjonKeQVHi+Hj+bgWjPn29QOJbyFKzvKqeFEgzcuUnNEaJI4g5K3QFIKQ==}
+  /sveltekit-superforms@2.12.0(@sveltejs/kit@2.0.6)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(svelte@4.2.12):
+    resolution: {integrity: sha512-gAZbJbkij0crd5vRT09rYI/XvBq0etAv2j5U95bb3hioYo2TATv8jGCvsPHrCRJQwuJJrIp/xQRJpgSAPuUq2Q==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
       svelte: 3.x || 4.x || >=5.0.0-next.51
@@ -3049,14 +3049,14 @@ packages:
       svelte: 4.2.12
       ts-deepmerge: 7.0.0
     optionalDependencies:
-      '@gcornut/valibot-json-schema': 0.0.25(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.29.0)
+      '@gcornut/valibot-json-schema': 0.0.27(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.20.2)(valibot@0.30.0)
       '@sinclair/typebox': 0.32.20
       '@sodaru/yup-to-json-schema': 2.0.1
       '@vinejs/vine': 1.8.0
       arktype: 1.0.29-alpha
       joi: 17.12.2
       superstruct: 1.0.4
-      valibot: 0.29.0
+      valibot: 0.30.0
       yup: 1.4.0
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
@@ -3241,8 +3241,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /valibot@0.29.0:
-    resolution: {integrity: sha512-JhZn08lwZPhAamOCfBwBkv/btQt4KeQhekULPH8crH053zUCLSOGEF2zKExu3bFf245tsj6J1dY0ysd/jUiMIQ==}
+  /valibot@0.30.0:
+    resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
     requiresBuild: true
     dev: true
     optional: true
