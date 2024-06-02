@@ -64,7 +64,7 @@ devDependencies:
     version: 5.1.4(postcss-load-config@5.0.3)(postcss@8.4.38)(svelte@4.2.15)(typescript@5.4.5)
   sveltekit-superforms:
     specifier: ^2.12.6
-    version: 2.13.1(@sveltejs/kit@2.5.8)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.21.4)(svelte@4.2.15)
+    version: 2.14.0(@sveltejs/kit@2.5.8)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.21.4)(svelte@4.2.15)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
@@ -99,8 +99,22 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@babel/runtime@7.24.5:
-    resolution: {integrity: sha512-Nms86NXrsaeU9vbBJKni6gXiEXZ4CVpYVzEjDH9Sb8vmZ3UljyA1GSOJl/6LGPO8EHLuSF9H+IxNXHPX8QHJ4g==}
+  /@arktype/schema@0.1.7:
+    resolution: {integrity: sha512-xeaS/0EiuT5kUQGC9DqLv0vnjFpbEILmaBQF9CrLhamR0v8c+eUNM6z5u6DgzqPZbDFMmtfiCdikUTT1VueWXw==}
+    requiresBuild: true
+    dependencies:
+      '@arktype/util': 0.0.45
+    dev: true
+    optional: true
+
+  /@arktype/util@0.0.45:
+    resolution: {integrity: sha512-WPzoElBZK1NxYzT8PnoNsnulohgRU7PRKkJUoqeGvuFqP/Egv7tRNnvcJCE0MboHUnWaPTy/5Psjm/4iOvbWiw==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@babel/runtime@7.24.6:
+    resolution: {integrity: sha512-Ja18XcETdEl5mzzACGd+DKgaGJzPTCow7EglgwTmHdwokzDFYh/MHua6lU6DV/hjF2IaOJ4oX2nqnjG7RElKOw==}
     engines: {node: '>=6.9.0'}
     requiresBuild: true
     dependencies:
@@ -1251,9 +1265,12 @@ packages:
       dequal: 2.0.3
     dev: true
 
-  /arktype@1.0.29-alpha:
-    resolution: {integrity: sha512-glMLgVhIQRSkR3tymiS+POAcWVJH09sfrgic0jHnyFL8BlhHAJZX2BzdImU9zYr1y9NBqy+U93ZNrRTHXsKRDw==}
+  /arktype@2.0.0-dev.15:
+    resolution: {integrity: sha512-V8/jyfU/ISl9uSzTNZMgj/sYOI1QNxhVaqcS+spWamF/jx4eDFMqBVdhAGysJhKyLC+Qi2yNw5f1YQuaOMEeGw==}
     requiresBuild: true
+    dependencies:
+      '@arktype/schema': 0.1.7
+      '@arktype/util': 0.0.45
     dev: true
     optional: true
 
@@ -2147,7 +2164,7 @@ packages:
     engines: {node: '>=16'}
     requiresBuild: true
     dependencies:
-      '@babel/runtime': 7.24.5
+      '@babel/runtime': 7.24.6
       ts-algebra: 2.0.0
     dev: true
     optional: true
@@ -3052,8 +3069,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /sveltekit-superforms@2.13.1(@sveltejs/kit@2.5.8)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.21.4)(svelte@4.2.15):
-    resolution: {integrity: sha512-kmwC3sNFAiHADLq7E46QBgDk4OEXLrhCQumwRbPcRAOQf/XvBzGBNmQGnIP62Rpiq+qLKbwo40c1gA4QA31bKg==}
+  /sveltekit-superforms@2.14.0(@sveltejs/kit@2.5.8)(@types/json-schema@7.0.15)(esbuild-runner@2.2.2)(esbuild@0.21.4)(svelte@4.2.15):
+    resolution: {integrity: sha512-TRN+x2+ENCnvDw70U5HLfmGQGFi4kpevpWaPpQ06AB0Wf5qCYxshbZBofMAXb8KOyetw8dhWpj86AQRPNwhzDg==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
       svelte: 3.x || 4.x || >=5.0.0-next.51
@@ -3070,7 +3087,7 @@ packages:
       '@sinclair/typebox': 0.32.31
       '@sodaru/yup-to-json-schema': 2.0.1
       '@vinejs/vine': 1.8.0
-      arktype: 1.0.29-alpha
+      arktype: 2.0.0-dev.15
       joi: 17.13.1
       json-schema-to-ts: 3.1.0
       superstruct: 1.0.4
