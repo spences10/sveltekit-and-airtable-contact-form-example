@@ -61,7 +61,7 @@ devDependencies:
     version: 3.8.0(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@4.2.18)
   svelte-preprocess:
     specifier: ^6.0.0
-    version: 6.0.0(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@4.2.18)(typescript@5.4.5)
+    version: 6.0.1(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@4.2.18)(typescript@5.4.5)
   sveltekit-superforms:
     specifier: ^2.12.6
     version: 2.15.1(@sveltejs/kit@2.5.8)(svelte@4.2.18)
@@ -880,8 +880,8 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@sinclair/typebox@0.32.31:
-    resolution: {integrity: sha512-rYB0tgGHawpom3ZwwsGidvI0NI+W/rRHu1dyyO1KlIoH8iMdg3esSnYQxQtyJ8eflhqxmzEV7Nu8zT4JY7CHKw==}
+  /@sinclair/typebox@0.32.32:
+    resolution: {integrity: sha512-m+A3zFSI87TCtoz6vQCSnd+t/kDKL78JmzhKYkON+7SnHSa+794qraIVpm6ozFGK+5svnVOt1LJ7BUEhGkIvgg==}
     requiresBuild: true
     dev: true
     optional: true
@@ -3064,8 +3064,8 @@ packages:
       typescript: 5.4.5
     dev: true
 
-  /svelte-preprocess@6.0.0(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@4.2.18)(typescript@5.4.5):
-    resolution: {integrity: sha512-sbyHnWBwIphuaJWC7hnJd6ZoW/VN0va3jVb/8dDfeT2+0hVmo1DCx+zBK0/JfUKQmzg/FOEtcsGKRnbt8pRRkw==}
+  /svelte-preprocess@6.0.1(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@4.2.18)(typescript@5.4.5):
+    resolution: {integrity: sha512-vNgXoyqWwahdpEX9XbQHcAHt41TkXnf8bRDxT5PjISHbZD1dVH4b2OsJ2fVQTBb3qP05x0GuYE9iS5vhD+Dniw==}
     engines: {node: '>= 18.0.0'}
     requiresBuild: true
     peerDependencies:
@@ -3145,7 +3145,7 @@ packages:
     optionalDependencies:
       '@exodus/schemasafe': 1.3.0
       '@gcornut/valibot-json-schema': 0.31.0
-      '@sinclair/typebox': 0.32.31
+      '@sinclair/typebox': 0.32.32
       '@sodaru/yup-to-json-schema': 2.0.1
       '@vinejs/vine': 1.8.0
       arktype: 2.0.0-dev.21
