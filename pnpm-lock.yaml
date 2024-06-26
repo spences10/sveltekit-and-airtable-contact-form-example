@@ -64,7 +64,7 @@ devDependencies:
     version: 6.0.1(postcss-load-config@6.0.1)(postcss@8.4.38)(svelte@4.2.18)(typescript@5.5.2)
   sveltekit-superforms:
     specifier: ^2.12.6
-    version: 2.15.1(@sveltejs/kit@2.5.17)(svelte@4.2.18)
+    version: 2.15.2(@sveltejs/kit@2.5.17)(svelte@4.2.18)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.4
@@ -787,8 +787,8 @@ packages:
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
     dev: true
 
-  /@types/validator@13.11.10:
-    resolution: {integrity: sha512-e2PNXoXLr6Z+dbfx5zSh9TRlXJrELycxiaXznp4S5+D2M3b9bqJEitNHA5923jhnB2zzFiZHa2f0SI1HoIahpg==}
+  /@types/validator@13.12.0:
+    resolution: {integrity: sha512-nH45Lk7oPIJ1RVOF6JgFI6Dy0QpHEzq4QecZhvguxYPDwT8c93prCMqAtiIttm39voZ+DDR+qkNnMpJmMBRqag==}
     requiresBuild: true
     dev: true
     optional: true
@@ -933,7 +933,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@poppinss/macroable': 1.0.2
-      '@types/validator': 13.11.10
+      '@types/validator': 13.12.0
       '@vinejs/compiler': 2.5.0
       camelcase: 8.0.0
       dayjs: 1.11.11
@@ -2901,8 +2901,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /sveltekit-superforms@2.15.1(@sveltejs/kit@2.5.17)(svelte@4.2.18):
-    resolution: {integrity: sha512-rLzcJTGEzt2oFC1fNYn+ddM25uoCawudHBU7qoLo5gp/JLMRNhtX9gbBMt8imMLo4VcB8339VtxBRcWiMV1faQ==}
+  /sveltekit-superforms@2.15.2(@sveltejs/kit@2.5.17)(svelte@4.2.18):
+    resolution: {integrity: sha512-8mraZXhTL43z2H7mqmkpfqMvIGmV9mtRabHIYM2B6I3ZmEvWESS9tQPhHFY8uIEFKL6oG6BP9Tvi/aP4QKdcyg==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
       svelte: 3.x || 4.x || >=5.0.0-next.51
@@ -2923,7 +2923,7 @@ packages:
       joi: 17.13.3
       json-schema-to-ts: 3.1.0
       superstruct: 1.0.4
-      valibot: 0.31.1
+      valibot: 0.35.0
       yup: 1.4.0
       zod: 3.23.8
       zod-to-json-schema: 3.23.1(zod@3.23.8)
@@ -3108,6 +3108,12 @@ packages:
 
   /valibot@0.31.1:
     resolution: {integrity: sha512-2YYIhPrnVSz/gfT2/iXVTrSj92HwchCt9Cga/6hX4B26iCz9zkIsGTS0HjDYTZfTi1Un0X6aRvhBi1cfqs/i0Q==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /valibot@0.35.0:
+    resolution: {integrity: sha512-+i2aCRkReTrd5KBN/dW2BrPOvFnU5LXTV2xjZnjnqUIO8YUx6P2+MgRrkwF2FhkexgyKq/NIZdPdknhHf5A/Ww==}
     requiresBuild: true
     dev: true
     optional: true
