@@ -64,7 +64,7 @@ devDependencies:
     version: 6.0.2(postcss-load-config@6.0.1)(postcss@8.4.39)(svelte@4.2.18)(typescript@5.5.3)
   sveltekit-superforms:
     specifier: ^2.12.6
-    version: 2.15.2(@sveltejs/kit@2.5.18)(svelte@4.2.18)
+    version: 2.16.0(@sveltejs/kit@2.5.18)(svelte@4.2.18)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.4
@@ -2925,8 +2925,8 @@ packages:
       ts-interface-checker: 0.1.13
     dev: true
 
-  /superstruct@1.0.4:
-    resolution: {integrity: sha512-7JpaAoX2NGyoFlI9NBh66BQXGONc+uE+MRS5i2iOBKuS4e+ccgMDjATgZldkah+33DakBxDHiss9kvUcGAO8UQ==}
+  /superstruct@2.0.2:
+    resolution: {integrity: sha512-uV+TFRZdXsqXTL2pRvujROjdZQ4RAlBUS5BTh9IGm+jTqQntYThciG/qu57Gs69yjnVUSqdxF9YLmSnpupBW9A==}
     engines: {node: '>=14.0.0'}
     requiresBuild: true
     dev: true
@@ -3091,8 +3091,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /sveltekit-superforms@2.15.2(@sveltejs/kit@2.5.18)(svelte@4.2.18):
-    resolution: {integrity: sha512-8mraZXhTL43z2H7mqmkpfqMvIGmV9mtRabHIYM2B6I3ZmEvWESS9tQPhHFY8uIEFKL6oG6BP9Tvi/aP4QKdcyg==}
+  /sveltekit-superforms@2.16.0(@sveltejs/kit@2.5.18)(svelte@4.2.18):
+    resolution: {integrity: sha512-t5aZyMCXyahgvn7VAJ7l9S+wAv9YyMAZHYQ6gcGVZ6ecr4/DMMD2r3ajGCj1h1dWaMQ3w5zVw+SqHSAkbHsWVQ==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
       svelte: 3.x || 4.x || >=5.0.0-next.51
@@ -3112,7 +3112,7 @@ packages:
       arktype: 2.0.0-dev.21
       joi: 17.13.3
       json-schema-to-ts: 3.1.0
-      superstruct: 1.0.4
+      superstruct: 2.0.2
       valibot: 0.35.0
       yup: 1.4.0
       zod: 3.23.8
