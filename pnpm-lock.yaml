@@ -64,7 +64,7 @@ devDependencies:
     version: 6.0.2(postcss-load-config@6.0.1)(postcss@8.4.39)(svelte@4.2.18)(typescript@5.5.4)
   sveltekit-superforms:
     specifier: ^2.12.6
-    version: 2.16.1(@sveltejs/kit@2.5.24)(svelte@4.2.18)
+    version: 2.17.0(@sveltejs/kit@2.5.24)(svelte@4.2.18)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.10
@@ -113,8 +113,8 @@ packages:
     dev: true
     optional: true
 
-  /@babel/runtime@7.24.8:
-    resolution: {integrity: sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==}
+  /@babel/runtime@7.25.6:
+    resolution: {integrity: sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==}
     engines: {node: '>=6.9.0'}
     requiresBuild: true
     dependencies:
@@ -996,8 +996,8 @@ packages:
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
     dev: true
 
-  /@types/validator@13.12.0:
-    resolution: {integrity: sha512-nH45Lk7oPIJ1RVOF6JgFI6Dy0QpHEzq4QecZhvguxYPDwT8c93prCMqAtiIttm39voZ+DDR+qkNnMpJmMBRqag==}
+  /@types/validator@13.12.1:
+    resolution: {integrity: sha512-w0URwf7BQb0rD/EuiG12KP0bailHKHP5YVviJG9zw3ykAokL0TuxU2TUqMB7EwZ59bDHYdeTIvjI5m0S7qHfOA==}
     requiresBuild: true
     dev: true
     optional: true
@@ -1141,10 +1141,10 @@ packages:
     requiresBuild: true
     dependencies:
       '@poppinss/macroable': 1.0.2
-      '@types/validator': 13.12.0
+      '@types/validator': 13.12.1
       '@vinejs/compiler': 2.5.0
       camelcase: 8.0.0
-      dayjs: 1.11.11
+      dayjs: 1.11.13
       dlv: 1.1.3
       normalize-url: 8.0.1
       validator: 13.12.0
@@ -1512,8 +1512,8 @@ packages:
       - postcss
     dev: true
 
-  /dayjs@1.11.11:
-    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
+  /dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
     requiresBuild: true
     dev: true
     optional: true
@@ -2168,12 +2168,12 @@ packages:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
     dev: true
 
-  /json-schema-to-ts@3.1.0:
-    resolution: {integrity: sha512-UeVN/ery4/JeXI8h4rM8yZPxsH+KqPi/84qFxHfTGHZnWnK9D0UU9ZGYO+6XAaJLqCWMiks+ARuFOKAiSxJCHA==}
+  /json-schema-to-ts@3.1.1:
+    resolution: {integrity: sha512-+DWg8jCJG2TEnpy7kOm/7/AxaYoaRbjVB4LFZLySZlWn8exGs3A4OLJR966cVvU26N7X9TWxl+Jsw7dzAqKT6g==}
     engines: {node: '>=16'}
     requiresBuild: true
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.6
       ts-algebra: 2.0.0
     dev: true
     optional: true
@@ -3097,8 +3097,8 @@ packages:
       periscopic: 3.1.0
     dev: true
 
-  /sveltekit-superforms@2.16.1(@sveltejs/kit@2.5.24)(svelte@4.2.18):
-    resolution: {integrity: sha512-RNBdN43xge/ADmc3s7+pfdnRGuZ9gZiqpX6VKAQCnCI+ICc5rrPv5idYbx4iuY1Ia0lRMAq1hP0x2oHaPjB+Kg==}
+  /sveltekit-superforms@2.17.0(@sveltejs/kit@2.5.24)(svelte@4.2.18):
+    resolution: {integrity: sha512-QrX8pkcmE0XoeVU42zMhsah4FoDrgtPc/4cZEr38rDlgU+DE0xNc5J0E7z1456sUJNbFjaB0+HZwwAkX0vYqaA==}
     peerDependencies:
       '@sveltejs/kit': 1.x || 2.x
       svelte: 3.x || 4.x || >=5.0.0-next.51
@@ -3117,7 +3117,7 @@ packages:
       '@vinejs/vine': 1.8.0
       arktype: 2.0.0-beta.0
       joi: 17.13.3
-      json-schema-to-ts: 3.1.0
+      json-schema-to-ts: 3.1.1
       superstruct: 2.0.2
       valibot: 0.35.0
       yup: 1.4.0
