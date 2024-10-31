@@ -70,7 +70,7 @@ devDependencies:
     version: 3.4.14
   tslib:
     specifier: ^2.8.0
-    version: 2.8.0
+    version: 2.8.1
   typescript:
     specifier: ^5.6.3
     version: 5.6.3
@@ -122,13 +122,13 @@ packages:
     dev: true
     optional: true
 
-  /@effect/schema@0.75.5(effect@3.10.4):
+  /@effect/schema@0.75.5(effect@3.10.7):
     resolution: {integrity: sha512-TQInulTVCuF+9EIbJpyLP6dvxbQJMphrnRqgexm/Ze39rSjfhJuufF7XvU3SxTgg3HnL7B/kpORTJbHhlE6thw==}
     requiresBuild: true
     peerDependencies:
       effect: ^3.9.2
     dependencies:
-      effect: 3.10.4
+      effect: 3.10.7
       fast-check: 3.22.0
     dev: true
     optional: true
@@ -1649,8 +1649,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /effect@3.10.4:
-    resolution: {integrity: sha512-D7Mryq8jylT0fIGrgXEn2TublO/BhduRwzlqV5z1l/QFY6grs7UOyyomlAOFMK9ArSYiLgrOSMQ/Cr/cIOeU2Q==}
+  /effect@3.10.7:
+    resolution: {integrity: sha512-jbiEIJZjYzou+AqeVhWFASshaIiU3g2atbZFEcqAtx56YcChzptTBOEjSLGDWXeWMfz1ra3u52EpxklKU/kTAg==}
     requiresBuild: true
     dependencies:
       fast-check: 3.22.0
@@ -2954,7 +2954,7 @@ packages:
       svelte: 4.2.19
       ts-deepmerge: 7.0.1
     optionalDependencies:
-      '@effect/schema': 0.75.5(effect@3.10.4)
+      '@effect/schema': 0.75.5(effect@3.10.7)
       '@exodus/schemasafe': 1.3.0
       '@gcornut/valibot-json-schema': 0.31.0
       '@sinclair/typebox': 0.32.35
@@ -2962,7 +2962,7 @@ packages:
       '@vinejs/vine': 1.8.0
       arktype: 2.0.0-rc.8
       class-validator: 0.14.1
-      effect: 3.10.4
+      effect: 3.10.7
       joi: 17.13.3
       json-schema-to-ts: 3.1.1
       superstruct: 2.0.2
@@ -3107,8 +3107,8 @@ packages:
     dev: true
     optional: true
 
-  /tslib@2.8.0:
-    resolution: {integrity: sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==}
+  /tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
     dev: true
 
   /type-check@0.4.0:
