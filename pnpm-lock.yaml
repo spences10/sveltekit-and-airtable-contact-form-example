@@ -58,7 +58,7 @@ devDependencies:
     version: 4.2.19
   svelte-check:
     specifier: ^4.0.9
-    version: 4.0.9(svelte@4.2.19)(typescript@5.6.3)
+    version: 4.1.0(svelte@4.2.19)(typescript@5.6.3)
   svelte-preprocess:
     specifier: ^6.0.3
     version: 6.0.3(postcss-load-config@6.0.1)(postcss@8.4.49)(svelte@4.2.19)(typescript@5.6.3)
@@ -99,16 +99,16 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
-  /@ark/schema@0.23.0:
-    resolution: {integrity: sha512-406Zx0te3ICd7PkGise4XIxOfmjFzK64tEuiN5rmJDg14AqhySXygMk8QcHqHORDJ7VXhel7J41iduw8eyiFPg==}
+  /@ark/schema@0.24.0:
+    resolution: {integrity: sha512-L9aHo485uunP8WhQHH1ofd/DiwyAOo2WS3FMF8AebmIVMjqHOKCXnNBUV1rBnzVZXaVslPlTcgAKjCDmCGoHZg==}
     requiresBuild: true
     dependencies:
-      '@ark/util': 0.23.0
+      '@ark/util': 0.24.0
     dev: true
     optional: true
 
-  /@ark/util@0.23.0:
-    resolution: {integrity: sha512-2mb24N2leQENRh+zPqnlRJzFFf8Xr7BT+/4MJN46/G8C45davpqFfcqvOw0ZlXrjQpBi8H+ZqDQsi95lN/9oVg==}
+  /@ark/util@0.24.0:
+    resolution: {integrity: sha512-YfXWkSinlhKdzoXAYxGVPvv2WMHzSN2Rrw5+Aoj79ksj8aPQdQagsMdnDTobaaynnlLxWz46hP/7JmVTo5QQ/A==}
     requiresBuild: true
     dev: true
     optional: true
@@ -122,13 +122,13 @@ packages:
     dev: true
     optional: true
 
-  /@effect/schema@0.75.5(effect@3.10.4):
+  /@effect/schema@0.75.5(effect@3.10.16):
     resolution: {integrity: sha512-TQInulTVCuF+9EIbJpyLP6dvxbQJMphrnRqgexm/Ze39rSjfhJuufF7XvU3SxTgg3HnL7B/kpORTJbHhlE6thw==}
     requiresBuild: true
     peerDependencies:
       effect: ^3.9.2
     dependencies:
-      effect: 3.10.4
+      effect: 3.10.16
       fast-check: 3.22.0
     dev: true
     optional: true
@@ -1366,12 +1366,12 @@ packages:
       dequal: 2.0.3
     dev: true
 
-  /arktype@2.0.0-rc.23:
-    resolution: {integrity: sha512-P0e40t3J4rc3xRHzPjzyOK1CgdgKswQJOFBgFLuehSiGcjAuRx6p/9lDVPzXZ62m7q5yRUqFiX8ovN5FjWQjMQ==}
+  /arktype@2.0.0-rc.24:
+    resolution: {integrity: sha512-uZB2XXDMzkM613MqhDMjB/y4RPSqS55W9Xn+GoVLgdat/Dr6MC/E90YqFsDCon9zusl3NB/A59MzXeR6PcTo4A==}
     requiresBuild: true
     dependencies:
-      '@ark/schema': 0.23.0
-      '@ark/util': 0.23.0
+      '@ark/schema': 0.24.0
+      '@ark/util': 0.24.0
     dev: true
     optional: true
 
@@ -1516,7 +1516,7 @@ packages:
     resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
     engines: {node: '>= 14.16.0'}
     dependencies:
-      readdirp: 4.0.1
+      readdirp: 4.0.2
     dev: true
 
   /class-validator@0.14.1:
@@ -1673,8 +1673,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /effect@3.10.4:
-    resolution: {integrity: sha512-D7Mryq8jylT0fIGrgXEn2TublO/BhduRwzlqV5z1l/QFY6grs7UOyyomlAOFMK9ArSYiLgrOSMQ/Cr/cIOeU2Q==}
+  /effect@3.10.16:
+    resolution: {integrity: sha512-7d69IMsIgnJKzopBMHdZR7d3JWwdHgzaIyIXif5jpu8gtQujIrIpgABXXMe+47KNSuS5k12s9dMRL3B8Y9s+Sw==}
     requiresBuild: true
     dependencies:
       fast-check: 3.22.0
@@ -1959,8 +1959,8 @@ packages:
       reusify: 1.0.4
     dev: true
 
-  /fdir@6.3.0:
-    resolution: {integrity: sha512-QOnuT+BOtivR77wYvCWHfGt9s4Pz1VIMbD463vegT5MLqNXy8rYFT/lPVEqf/bhYeT6qmqrNHhsX+rWwe3rOCQ==}
+  /fdir@6.4.2:
+    resolution: {integrity: sha512-KnhMXsKSPZlAhp7+IjUkRZKPb4fUyccpDrdFXbi4QL1qkmFh9kVY09Yox+n4MaOb3lHZ1Tv829C3oaaXoMYPDQ==}
     peerDependencies:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
@@ -2683,8 +2683,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /readdirp@4.0.1:
-    resolution: {integrity: sha512-GkMg9uOTpIWWKbSsgwb5fA4EavTR+SG/PMPoAY8hkhHfEEY0/vqljY+XHqtDf2cr2IJtoNRDbrrEpZUiZCkYRw==}
+  /readdirp@4.0.2:
+    resolution: {integrity: sha512-yDMz9g+VaZkqBYS/ozoBJwaBhTbZo3UNYQHNRw1D3UFQB8oHB4uS/tAODO+ZLjGWmUbKnIlOWO+aaIiAxrUWHA==}
     engines: {node: '>= 14.16.0'}
     dev: true
 
@@ -2898,8 +2898,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check@4.0.9(svelte@4.2.19)(typescript@5.6.3):
-    resolution: {integrity: sha512-SVNCz2L+9ZELGli7G0n3B3QE5kdf0u27RtKr2ZivWQhcWIXatZxwM4VrQ6AiA2k9zKp2mk5AxkEhdjbpjv7rEw==}
+  /svelte-check@4.1.0(svelte@4.2.19)(typescript@5.6.3):
+    resolution: {integrity: sha512-AflEZYqI578KuDZcpcorPSf597LStxlkN7XqXi38u09zlHODVKd7c+7OuubGzbhgGRUqNTdQCZ+Ga96iRXEf2g==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -2908,7 +2908,7 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.1
-      fdir: 6.3.0
+      fdir: 6.4.2
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 4.2.19
@@ -2994,19 +2994,19 @@ packages:
       svelte: 4.2.19
       ts-deepmerge: 7.0.1
     optionalDependencies:
-      '@effect/schema': 0.75.5(effect@3.10.4)
+      '@effect/schema': 0.75.5(effect@3.10.16)
       '@exodus/schemasafe': 1.3.0
       '@gcornut/valibot-json-schema': 0.31.0
       '@sinclair/typebox': 0.32.35
       '@typeschema/class-validator': 0.3.0(class-validator@0.14.1)
       '@vinejs/vine': 2.1.0
-      arktype: 2.0.0-rc.23
+      arktype: 2.0.0-rc.24
       class-validator: 0.14.1
-      effect: 3.10.4
+      effect: 3.10.16
       joi: 17.13.3
       json-schema-to-ts: 3.1.1
       superstruct: 2.0.2
-      valibot: 1.0.0-beta.7(typescript@5.6.3)
+      valibot: 1.0.0-beta.8(typescript@5.6.3)
       yup: 1.4.0
       zod: 3.23.8
       zod-to-json-schema: 3.23.5(zod@3.23.8)
@@ -3194,8 +3194,8 @@ packages:
     dev: true
     optional: true
 
-  /valibot@1.0.0-beta.7(typescript@5.6.3):
-    resolution: {integrity: sha512-8CsDu3tqyg7quEHMzCOYdQ/d9NlmVQKtd4AlFje6oJpvqo70EIZjSakKIeWltJyNAiUtdtLe0LAk4625gavoeQ==}
+  /valibot@1.0.0-beta.8(typescript@5.6.3):
+    resolution: {integrity: sha512-OPAwJZtowb0j91b+bd77+ny7D1VVzsCzD7Jl9waLUlMprTsfI9Y3HHbW3hAQD7wKDKHsmGEesuiYWaYvcZL2wg==}
     requiresBuild: true
     peerDependencies:
       typescript: '>=5'
