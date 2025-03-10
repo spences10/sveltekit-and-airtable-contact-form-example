@@ -1,7 +1,11 @@
 <script lang="ts">
-	import '../app.css'
+	import '../app.css';
+
+	let { children } = $props();
 </script>
 
-<main class="container max-w-4xl mx-auto px-4 mb-20 text-xl prose-xl prose-a:link-primary">
-	<slot />
+<main
+	class="prose-xl prose-a:link-primary container mx-auto mb-20 max-w-4xl px-4 text-xl"
+>
+	{@render children()}
 </main>
