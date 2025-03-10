@@ -1,31 +1,32 @@
 <script lang="ts">
-	import { superForm } from 'sveltekit-superforms/client'
-	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte'
-	import { z } from 'zod'
+	import { superForm } from 'sveltekit-superforms/client';
+	import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+	import { zodClient } from 'sveltekit-superforms/adapters';
+	import { z } from 'zod';
 
-	export let data
+	let { data } = $props();
 
-	let submission_status = ''
+	let submission_status = $state('');
 
-	const new_contact = z.object({
+	const schema = z.object({
 		name: z.string().min(2),
 		email: z.string().email(),
 		message: z.string().min(10),
-	})
+	});
 
 	const { form, errors, enhance } = superForm(data.form, {
-		validators: new_contact,
+		validators: zodClient(schema),
 		resetForm: true,
 		onSubmit: () => {
-			submission_status = 'submitting'
+			submission_status = 'submitting';
 		},
 		onError: () => {
-			submission_status = 'failed'
+			submission_status = 'failed';
 		},
 		onUpdated: () => {
-			submission_status = 'success'
+			submission_status = 'success';
 		},
-	})
+	});
 </script>
 
 <div class="mx-auto max-w-xl">
@@ -40,8 +41,8 @@
 
 		<button
 			data-sveltekit-reload
-			on:click={() => {
-				submission_status = ''
+			onclick={() => {
+				submission_status = '';
 			}}
 			class="btn btn-primary w-full"
 		>
@@ -107,7 +108,7 @@
 				rows="3"
 				autocomplete="off"
 				class="textarea input-bordered w-full"
-			/>
+			></textarea>
 			<label for="message" class="label">
 				<span
 					class="label-text-alt {$errors.message
@@ -121,7 +122,7 @@
 			<input
 				type="submit"
 				value="Submit to Airtable"
-				class="btn btn-primary w-full mt-10"
+				class="btn btn-primary mt-10 w-full"
 			/>
 		</form>
 	{/if}
@@ -130,7 +131,7 @@
 		<a
 			href="/"
 			data-sveltekit-reload
-			class="btn btn-secondary w-full !text-secondary-content"
+			class="btn btn-secondary !text-secondary-content w-full"
 		>
 			Back
 		</a>

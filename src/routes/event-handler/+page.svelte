@@ -1,11 +1,12 @@
 <script lang="ts">
-	let submission_status = ''
-	const handle_submit = async (event: Event) => {
-		submission_status = 'submitting'
+	let submission_status = $state('');
+	const handle_submit = async (event: SubmitEvent) => {
+		event.preventDefault();
+		submission_status = 'submitting';
 
-		const form = event.target as HTMLFormElement
-		const form_data = new FormData(form)
-		const data = Object.fromEntries(form_data)
+		const form = event.target as HTMLFormElement;
+		const form_data = new FormData(form);
+		const data = Object.fromEntries(form_data);
 
 		const res = await fetch('/submit-form', {
 			method: 'POST',
@@ -13,11 +14,11 @@
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify(data),
-		})
+		});
 
-		const { message } = await res.json()
-		submission_status = message
-	}
+		const { message } = await res.json();
+		submission_status = message;
+	};
 </script>
 
 <div class="mx-auto max-w-xl">
@@ -32,15 +33,15 @@
 
 		<button
 			data-sveltekit-reload
-			on:click={() => {
-				submission_status = ''
+			onclick={() => {
+				submission_status = '';
 			}}
 			class="btn btn-primary w-full"
 		>
 			Submit another?
 		</button>
 	{:else}
-		<form method="POST" on:submit|preventDefault={handle_submit}>
+		<form method="POST" onsubmit={handle_submit}>
 			<label for="name" class="label">
 				<span class="label-text">Name</span>
 			</label>
@@ -75,8 +76,8 @@
 				required
 				rows="3"
 				autocomplete="off"
-				class="textarea input-bordered w-full mb-10"
-			/>
+				class="textarea input-bordered mb-10 w-full"
+			></textarea>
 			<input
 				type="submit"
 				value="Submit to Airtable"
@@ -89,7 +90,7 @@
 		<a
 			href="/"
 			data-sveltekit-reload
-			class="btn btn-secondary w-full !text-secondary-content"
+			class="btn btn-secondary !text-secondary-content w-full"
 		>
 			Back
 		</a>

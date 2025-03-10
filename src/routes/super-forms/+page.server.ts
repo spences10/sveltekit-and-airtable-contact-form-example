@@ -1,16 +1,17 @@
 import { AIRTABLE_BASE_ID, AIRTABLE_API_KEY } from '$env/static/private'
 import { fail } from '@sveltejs/kit'
 import { superValidate } from 'sveltekit-superforms/server'
+import { zod } from 'sveltekit-superforms/adapters'
 import { z } from 'zod'
 
-const new_contact = z.object({
-	name: z.string(),
+const schema = zod(z.object({
+	name: z.string().min(2),
 	email: z.string().email(),
-	message: z.string(),
-})
+	message: z.string().min(10),
+}));
 
 export const load = async (event) => {
-	const form = await superValidate(event, new_contact)
+	const form = await superValidate(event, schema)
 	return {
 		form,
 	}
@@ -18,7 +19,7 @@ export const load = async (event) => {
 
 export const actions = {
 	default: async (event) => {
-		const form = await superValidate(event, new_contact)
+		const form = await superValidate(event, schema)
 		if (!form.valid) fail(400, { form })
 		
 		const { name, email, message } = form.data

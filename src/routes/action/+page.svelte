@@ -1,26 +1,33 @@
 <script lang="ts">
-	import { enhance } from '$app/forms'
-	import type { ActionData } from './$types'
+	import { enhance } from '$app/forms';
+	import type { ActionData } from './$types';
 
-	export let form: ActionData
+	interface Props {
+		form: ActionData;
+	}
 
-	$: submissionStatus = form?.body?.message
+	let { form }: Props = $props();
+	let submission_status = $state(null);
+	const form_message = $derived(form?.body?.message);
+	$effect(() => {
+		submission_status = form_message;
+	});
 </script>
 
 <div class="mx-auto max-w-xl">
 	<h2>Action</h2>
 
-	{#if submissionStatus === 'submitting'}
+	{#if submission_status === 'submitting'}
 		<p>Submitting...</p>
-	{:else if submissionStatus === 'failed'}
+	{:else if submission_status === 'failed'}
 		<p>Submission failed.</p>
-	{:else if submissionStatus === 'success'}
+	{:else if submission_status === 'success'}
 		<p>Submission success.</p>
 
 		<button
 			data-sveltekit-reload
-			on:click={() => {
-				submissionStatus = null
+			onclick={() => {
+				submission_status = null;
 			}}
 			class="btn btn-primary w-full"
 		>
@@ -62,8 +69,8 @@
 				required
 				rows="3"
 				autocomplete="off"
-				class="textarea input-bordered w-full mb-10"
-			/>
+				class="textarea input-bordered mb-10 w-full"
+			></textarea>
 			<input
 				type="submit"
 				value="Submit to Airtable"
@@ -76,7 +83,7 @@
 		<a
 			href="/"
 			data-sveltekit-reload
-			class="btn btn-secondary w-full !text-secondary-content"
+			class="btn btn-secondary !text-secondary-content w-full"
 		>
 			Back
 		</a>
