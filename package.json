@@ -24,7 +24,7 @@
 		"autoprefixer": "^10.4.21",
 		"daisyui": "^4.12.23",
 		"eslint": "^9.22.0",
-		"eslint-config-prettier": "^9.1.0",
+		"eslint-config-prettier": "^10.0.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"postcss": "^8.5.3",
 		"postcss-load-config": "^6.0.1",
