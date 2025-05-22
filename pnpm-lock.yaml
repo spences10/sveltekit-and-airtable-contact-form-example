@@ -39,8 +39,8 @@ importers:
         specifier: ^5.2.8
         version: 5.2.8(svelte@5.32.1)(vite@6.3.5(jiti@2.4.2)(lightningcss@1.30.1))(vitest@3.1.4(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1))
       daisyui:
-        specifier: ^5.0.35
-        version: 5.0.35
+        specifier: ^5.0.36
+        version: 5.0.36
       eslint:
         specifier: ^9.27.0
         version: 9.27.0(jiti@2.4.2)
@@ -90,8 +90,8 @@ importers:
         specifier: ^3.1.4
         version: 3.1.4(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)
       zod:
-        specifier: ^3.25.17
-        version: 3.25.17
+        specifier: ^3.25.20
+        version: 3.25.20
 
 packages:
 
@@ -947,8 +947,8 @@ packages:
     resolution: {integrity: sha512-6r0NiY0xizYqfBvWp1G7WXJ06/bZyrk7Dc6PHql82C/pKGUTKu4yAX4Y8JPamb1ob9nBKuxWzCGTRuGwU3yxJQ==}
     engines: {node: '>=18'}
 
-  daisyui@5.0.35:
-    resolution: {integrity: sha512-AWi11n/x5++mps55jcwrBf0Lmip1euWY0FYcH/05SFGmoqrU7S7/aIUWaiaeqlJ5EcmEZ/7zEY73aOxMv6hcIg==}
+  daisyui@5.0.36:
+    resolution: {integrity: sha512-sip+nFHX+pSwSeVxL459+rAWcHOyaDaF8oSnUeC0yOk6yc6KPh5Ttuv8am2CqmYmm+ZPY+udcAiAPdGzf5pBHg==}
 
   data-urls@5.0.0:
     resolution: {integrity: sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==}
@@ -2042,8 +2042,8 @@ packages:
     peerDependencies:
       zod: ^3.24.1
 
-  zod@3.25.17:
-    resolution: {integrity: sha512-8hQzQ/kMOIFbwOgPrm9Sf9rtFHpFUMy4HvN0yEB0spw14aYi0uT5xG5CE2DB9cd51GWNsz+DNO7se1kztHMKnw==}
+  zod@3.25.20:
+    resolution: {integrity: sha512-z03fqpTMDF1G02VLKUMt6vyACE7rNWkh3gpXVHgPTw28NPtDFRGvcpTtPwn2kMKtQ0idtYJUTxchytmnqYswcw==}
 
 snapshots:
 
@@ -2818,7 +2818,7 @@ snapshots:
       '@asamuzakjp/css-color': 3.1.1
       rrweb-cssom: 0.8.0
 
-  daisyui@5.0.35: {}
+  daisyui@5.0.36: {}
 
   data-urls@5.0.0:
     dependencies:
@@ -3589,8 +3589,8 @@ snapshots:
       superstruct: 2.0.2
       valibot: 1.0.0-rc.3(typescript@5.8.3)
       yup: 1.6.1
-      zod: 3.25.17
-      zod-to-json-schema: 3.24.3(zod@3.25.17)
+      zod: 3.25.20
+      zod-to-json-schema: 3.24.3(zod@3.25.20)
     transitivePeerDependencies:
       - '@types/json-schema'
       - typescript
@@ -3826,9 +3826,9 @@ snapshots:
 
   zimmerframe@1.1.2: {}
 
-  zod-to-json-schema@3.24.3(zod@3.25.17):
+  zod-to-json-schema@3.24.3(zod@3.25.20):
     dependencies:
-      zod: 3.25.17
+      zod: 3.25.20
     optional: true
 
-  zod@3.25.17: {}
+  zod@3.25.20: {}

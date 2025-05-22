@@ -27,7 +27,7 @@
 		"@tailwindcss/vite": "^4.1.7",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.8",
-		"daisyui": "^5.0.35",
+		"daisyui": "^5.0.36",
 		"eslint": "^9.27.0",
 		"eslint-config-prettier": "^10.1.5",
 		"eslint-plugin-svelte": "^3.9.0",
@@ -44,7 +44,7 @@
 		"typescript-eslint": "^8.32.1",
 		"vite": "^6.3.5",
 		"vitest": "^3.1.4",
-		"zod": "^3.25.17"
+		"zod": "^3.25.20"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
