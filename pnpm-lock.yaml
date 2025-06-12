@@ -91,7 +91,7 @@ importers:
         version: 3.2.1(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)
       zod:
         specifier: ^3.25.20
-        version: 3.25.51
+        version: 3.25.63
 
 packages:
 
@@ -2072,8 +2072,8 @@ packages:
     peerDependencies:
       zod: ^3.24.1
 
-  zod@3.25.51:
-    resolution: {integrity: sha512-TQSnBldh+XSGL+opiSIq0575wvDPqu09AqWe1F7JhUMKY+M91/aGlK4MhpVNO7MgYfHcVCB1ffwAUTJzllKJqg==}
+  zod@3.25.63:
+    resolution: {integrity: sha512-3ttCkqhtpncYXfP0f6dsyabbYV/nEUW+Xlu89jiXbTBifUfjaSqXOG6JnQPLtqt87n7KAmnMqcjay6c0Wq0Vbw==}
 
 snapshots:
 
@@ -3636,8 +3636,8 @@ snapshots:
       superstruct: 2.0.2
       valibot: 1.0.0-rc.3(typescript@5.8.3)
       yup: 1.6.1
-      zod: 3.25.51
-      zod-to-json-schema: 3.24.3(zod@3.25.51)
+      zod: 3.25.63
+      zod-to-json-schema: 3.24.3(zod@3.25.63)
     transitivePeerDependencies:
       - '@types/json-schema'
       - typescript
@@ -3880,9 +3880,9 @@ snapshots:
 
   zimmerframe@1.1.2: {}
 
-  zod-to-json-schema@3.24.3(zod@3.25.51):
+  zod-to-json-schema@3.24.3(zod@3.25.63):
     dependencies:
-      zod: 3.25.51
+      zod: 3.25.63
     optional: true
 
-  zod@3.25.51: {}
+  zod@3.25.63: {}
